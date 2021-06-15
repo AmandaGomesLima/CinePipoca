@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Amanda Gomes Lima">
+    <title>CinePipoca</title>
+
+    <link rel="apple-touch-icon" sizes="192x192" href="image/icon-192x192.png" type="image/png">
+    <link id="favicon" rel="shortcut icon" type="image/png" href="image/icon-192x192.png" src="image/icon-192x192.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="image/logo-cine.png" alt="Logo CinePipoca" height="24" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0 me-4">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">lançamentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">em destaque</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">avaliações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">entrevistas & making of</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">novidades</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Pesquisar filme">
+              <button class="btn btn-red" type="submit"><i class="bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!---- SEÇÃO: LANÇAMENTOS ---->
+      <div id="slidesMovieReleases" class="carousel slide pointer-event pt-4 pb-5 py-xl-5 px-3" data-bs-ride="carousel">
+        <h1 class="text-center text-white pb-2 pb-md-3 pb-lg-4 pb-xl-5">Lançamentos</h1>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slidesMovieReleases" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" class="active"></button>
+          <button type="button" data-bs-target="#slidesMovieReleases" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#slidesMovieReleases" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner text-light">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 pt-lg-3">
+                  <div class="ratio ratio-16x9">
+                    <iframe class="carousel-video" src="https://www.youtube.com/embed/8Tk8sqXlogM?rel=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-warning pt-3 pt-lg-0">Mortal Kombat</h2>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <p>Os planetas estão desalinhados. Para deter as forças do mal e salvar a humanidade, Lord Rayden, o protetor da Terra, escolhe as três pessoas capazes de vencer o Mortal Kombat, disputado pelos melhores lutadores do universo.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <div class="lh-1">
+                        <p><span class="fw-bold">Diretor(a):</span> Simon McQuoid</p>
+                        <p><span class="fw-bold">Roteiro:</span> Greg Russo, David Callaham, Rebecca Swan</p>
+                        <p><span class="fw-bold">Elenco:</span> Joe Taslim, Josh Lawson, Lewis Tan, Jessica McNamee</p>
+                        <p><span class="fw-bold">Estreia:</span> 2021</p>
+                      </div>
+                      <p class="fw-bold">
+                        Avaliação:<br>
+                        <span class="text-warning">
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star"></i>
+                          <i class="bi-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 pt-lg-3">
+                  <div class="ratio ratio-16x9">
+                    <iframe class="carousel-video" src="https://www.youtube.com/embed/MNzVejYsFhY?rel=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-warning pt-3 pt-lg-0">Cruella</h2>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <p>Inteligente, criativa e determinada, Estella quer fazer um nome para si através de seus designs e acaba chamando a atenção da Baronesa Von Hellman. Entretanto, o relacionamento delas desencadeia um curso de eventos e revelações que fazem com que Estella abrace seu lado rebelde e se torne a Cruella.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <div class="lh-1">
+                        <p><span class="fw-bold">Diretor(a):</span> Craig Gillespie</p>
+                        <p><span class="fw-bold">Roteiro:</span> Tony McNamara, Aline Brosh McKenna, Kelly Marcel, Dana Fox</p>
+                        <p><span class="fw-bold">Elenco:</span> Emma Stone, Emma Thompson, Emily Beecham, Mark Strong</p>
+                        <p><span class="fw-bold">Estreia:</span> 2021</p>
+                      </div>
+                      <p class="fw-bold">
+                        Avaliação:<br>
+                        <span class="text-warning">
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 pt-lg-3">
+                  <div class="ratio ratio-16x9">
+                    <iframe class="carousel-video" src="https://www.youtube.com/embed/9_PTB062yec?rel=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-warning pt-3 pt-lg-0">Infiltrado</h2>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <p>Harry, conhecido apenas como H, é um homem misterioso que trabalha para uma empresa de carros-fortes e movimenta grandes quantias de dinheiro pela cidade de Los Angeles. Quando, ao impedir um assalto, suas verdadeiras intenções começam a ser questionadas e um plano maior é revelado.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <div class="lh-1">
+                        <p><span class="fw-bold">Diretor(a):</span> Guy Ritchie</p>
+                        <p><span class="fw-bold">Roteiro:</span> Guy Ritchie, Nicolas Boukhrief, Ivan Atkinson</p>
+                        <p><span class="fw-bold">Elenco:</span> Jason Statham, Scott Eastwoodm, Josh Hartnett, Niamh Algar</p>
+                        <p><span class="fw-bold">Estreia:</span> 2021</p>
+                      </div>
+                      <p class="fw-bold">
+                        Avaliação:<br>
+                        <span class="text-warning">
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star-fill"></i>
+                          <i class="bi-star-half"></i>
+                          <i class="bi-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---- SEÇÃO: EM DESTAQUE ---->
+      <div class="container-md highlighted mb-4 mb-md-5 pt-3 pt-md-4 pt-lg-5">
+        <div class="row mb-4 mb-lg-5">
+          <div class="col-sm-6 col-lg-9">
+            <h2 class="h1 text-red">Em destaque</h2>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <select class="form-select" aria-label="Default select example">
+              <option value="0" selected>Categoria: TODOS</option>
+              <option value="1">Aventura</option>
+              <option value="2">Romance</option>
+              <option value="3">Comédia</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-3 mb-3 mb-sm-0">
+            <a href="#">
+              <img class="img-fluid" src="image/poster/em_um_bairro_nova_york.jpeg" alt="Filme Em Um Bairro Em Nova York">
+            </a>
+          </div>
+          <div class="col-6 col-sm-3 mb-3 mb-sm-0">
+            <a href="#">
+              <img class="img-fluid" src="image/poster/hallowen_kills.jpg" alt="Filme Hallowen Kills">
+            </a>
+          </div>
+          <div class="col-6 col-sm-3">
+            <a href="#">
+              <img class="img-fluid" src="image/poster/pinoquio.jpg" alt="Filme Pinóquio">
+            </a>
+          </div>
+          <div class="col-6 col-sm-3">
+            <a href="#">
+              <img class="img-fluid" src="image/poster/TomJerry.jpeg" alt="Filme Tom & Jerry">
+            </a>
+          </div>
+        </div>
+        <div class="row mt-4 mt-lg-5">
+          <div class="col-lg-12 text-end">
+            <button type="button" class="btn btn-red"><i class="bi-plus"></i> Carregar mais filmes</button>
+          </div>
+        </div>
+      </div>
+
+      <!---- SEÇÃO: ÚLTIMAS AVALIAÇÕES ---->
+      <div class="container-md latest-reviews mb-4 mb-md-5 mt-2 mt-lg-0">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="h1 text-red mb-4 mb-lg-5">Últimas avaliações</h2>
+          </div>
+        </div>
+        <div class="row pt-3 pt-lg-4">
+          <div class="col-lg-6 mb-4 mb-md-5 mb-lg-0">
+            <div class="d-flex flex-column flex-sm-row align-items-start ps-md-3">
+              <img class="rounded-circle mx-auto mb-3 mb-lg-0" src="https://around.createx.studio/img/demo/event-landing/speakers/01.jpg" alt="Ísis Brito" width="75">
+              <div class="ms-0 ms-sm-4">
+                <h3 class="h5 text-center text-sm-start">Ísis Brito</h3>
+                <p class="h6 text-secondary text-center text-sm-start">Cherry - Inocência perdida</p>
+                <p class="fs-md mb-0">Uma história bonita, realmente é um filme pra ficar na lista de filmes que não se deve esquecer de rever. O filme retrata diferentes partes da vida do protagonista e como o ser humano pode errar mais de uma vez em suas escolhas.</p>
+                <p class="text-warning mt-2 mb-0">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-half"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex flex-column flex-sm-row align-items-start ps-md-3">
+              <img class="rounded-circle mx-auto mb-3 mb-lg-0" src="https://around.createx.studio/img/demo/event-landing/speakers/02.jpg" alt="Rafael Bicalho" width="75">
+              <div class="ms-0 ms-sm-4">
+                <h3 class="h5 text-center text-sm-start">Rafael Bicalho</h3>
+                <p class="h6 text-secondary text-center text-sm-start">Nomadland</p>
+                <p class="fs-md mb-0">A edição é muito imprevisível e a aleatoriedade de eventos cansa. Falta substância, falta história, falta dramaticidade. O filme tenta nos emocionar o tempo todo, através de relatos de personagens que sequer tiveram tempo de tela suficiente para o espectador sentir seus dramas.</p>
+                <p class="text-warning mt-2 mb-0">
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star"></i>
+                  <i class="bi-star"></i>
+                  <i class="bi-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 mt-lg-5">
+          <div class="col-lg-12 text-end">
+            <button type="button" class="btn btn-red"><i class="bi-plus"></i> Carregar mais avaliações</button>
+          </div>
+        </div>
+      </div>
+
+      <!---- SEÇÃO: ENTREVISTAS E MAKING OF ---->
+      <div class="container-fluid interviews-makingof bg-secondary mb-4 mb-md-5 px-0">
+        <div class="container-md py-4 py-lg-5">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="h1 text-white mb-4 mb-lg-5">Entrevistas & Making of</h2>
+            </div>
+          </div>
+          <div class="row text-white">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <div class="row">
+                <div class="col-sm-6 col-lg-12">
+                  <iframe class="interview-video" src="https://www.youtube.com/embed/ZUTB8VbJalg?rel=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-6 col-lg-12">
+                  <div class="ps-lg-2">
+                    <h2 class="h4 text-warning mt-2">Adoráveis Mulheres</h2>
+                    <p class="mb-1"><span class="fw-bold">Diretor(a):</span> Greta Gerwig</p>
+                    <p class="mb-0"><span class="fw-bold">Estreia:</span> 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <div class="row">
+                <div class="col-sm-6 col-lg-12">
+                  <iframe class="interview-video" src="https://www.youtube.com/embed/mD8o_aRXZ08?rel=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-6 col-lg-12">
+                  <div class="ps-lg-2">
+                    <h2 class="h4 text-warning mt-2">Um Lugar Silencioso - Parte II</h2>
+                    <p class="mb-1"><span class="fw-bold">Diretor(a):</span> John Krasinski</p>
+                    <p class="mb-0"><span class="fw-bold">Estreia:</span> 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-sm-6 col-lg-12">
+                  <iframe class="interview-video" src="https://www.youtube.com/embed/wIAr95IYyGI?rel=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-6 col-lg-12">
+                  <div class="ps-lg-2">
+                    <h2 class="h4 text-warning mt-2">1917</h2>
+                    <p class="mb-1"><span class="fw-bold">Diretor(a):</span> Sam Mendes</p>
+                    <p class="mb-0"><span class="fw-bold">Estreia:</span> 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 mt-lg-5">
+            <div class="col-lg-12 text-end">
+              <button type="button" class="btn btn-red"><i class="bi-plus"></i> Carregar mais filmes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---- SEÇÃO: NOVIDADES E SOBRE ---->
+      <div class="container-md news-about-editorial mb-3 mb-lg-5">
+        <div class="row">
+          <div class="col-xl-8 pe-lg-5">
+            <h2 class="h1 text-red mb-4 mb-md-5">Novidades</h2>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-sm-none d-md-block">
+                  <img class="img-fluid" src="image/news/netflix.jpg" alt="Catálogo da Netflix">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#" class="link-dark text-decoration-none">Projetos estrelados por Henry Cavill voltam ainda este ano ao catálogo da Netflix</a>
+                    </h5>
+                    <p class="card-text text-secondary">A Netflix pode ter anunciado que vai lançar um filme por semana em 2021. A produção de conteúdos originais só aumenta e os fãs estão ansiosos pelos retornos de algumas obras famosas.</p>
+                    <p class="card-text">
+                      <span class="badge bg-type">filmes</span>
+                      <span class="badge bg-other">provedor</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 d-sm-none d-md-block">
+                  <img class="img-fluid" src="image/news/fbi_globo.jpg" alt="Série da Globo sobre FBI">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#" class="link-dark text-decoration-none">Projetos estrelados por Henry Cavill voltam ainda este ano ao catálogo da Netflix</a>
+                    </h5>
+                    <p class="card-text text-secondary">A partir do dia 07 de maio, a série F.B.I. passará a ser exibida na programação da Rede Globo. Às sextas-feiras, depois do Globo Repórter, a Sessão Globoplay receberá a segunda parte da primeira temporada da série.</p>
+                    <p class="card-text">
+                      <span class="badge bg-type">série</span>
+                      <span class="badge bg-category">policial</span>
+                      <span class="badge bg-place">nacional</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4 d-sm-none d-md-block">
+                  <img class="img-fluid" src="image/news/soul_filme.png" alt="Filme Soul">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <a href="#" class="link-dark text-decoration-none">Soul: Filme indicado ao Oscar 2021 vai expandir sua história de forma inusitada</a>
+                    </h5>
+                    <p class="card-text text-secondary">Lançado mundialmente pelo Disney+ por conta da pandemia do Coronavírus, o filme Soul se tornou o queridinho dentre as animações nessa temporada de premiações.</p>
+                    <p class="card-text">
+                      <span class="badge bg-type">filme</span>
+                      <span class="badge bg-category">animação</span>
+                      <span class="badge bg-award">oscar</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-12">
+                <h2 class="h1 text-red mt-4 mt-md-5 mt-xl-0 mb-3 mb-xl-5">Sobre</h2>
+                <p class="mb-0">O Cine Pipoca é um website brasileiro criado com objetivo de indicar filmes e séries. O site tem matérias sobre os lançamentos no cinema, catálogo geral de filmes, avaliações de usuários, entrevistas e making of dos grandes sucessos do cinema.</p>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-12 ps-sm-5 ps-xl-3">
+                <h2 class="h1 text-red mt-4 mt-md-5 mb-3 mb-xl-5">Editorial</h2>
+                <ul class="list-group">
+                  <li class="list-group-item ps-1"><i class="bi-person-fill"></i> <span class="fw-bold">Redação:</span> Ravi Bonilha</li>
+                  <li class="list-group-item ps-1"><i class="bi-person-fill"></i> <span class="fw-bold">Pesquisa:</span> Luísa Curado</li>
+                  <li class="list-group-item ps-1"><i class="bi-person-fill"></i> <span class="fw-bold">Gerente Geral:</span> Rodrigo Urias</li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-4 col-xl-12">
+                <h2 class="h1 text-red mt-4 mt-md-5 mb-3 mb-xl-5">Redes sociais</h2>
+                <p>
+                  <a class="btn-social bs-light bs-twitter ms-2 mb-2" href="#"><i class="bi-twitter"></i></a>
+                  <a class="btn-social bs-light bs-facebook ms-2 mb-2" href="#"><i class="bi-facebook"></i></a>
+                  <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="#"><i class="bi-instagram"></i></a>
+                  <a class="btn-social bs-light bs-youtube ms-2 mb-2" href="#"><i class="bi-youtube"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      
+    <!-- RODAPÉ -->
+    <footer class="footer bg-dark py-4">
+      <div class="container-md text-white d-flex flex-column-reverse flex-sm-row align-items-center">
+        <p class="pt-3 pt-sm-0">© 2021 - Cine Pipoca - ICEI PUC Minas.</p>
+        <div class="ms-sm-auto">
+          <a href="#"><img src="image/logo-cine-vertical.png" alt="Logo CinePipoca"></a>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
