@@ -71,7 +71,60 @@ body {
   height: 350px;
 }*/
 
-/* highlighted CONTENT */
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 20px;
+  max-height: 60px;
+}
+
+.circle-bg {
+  fill: #6f0f0f;
+}
+
+.circle {
+  fill: none;
+  stroke: #792321;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.circular-chart.red .circle {
+  stroke: #c74c4c;
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.pontuacao {
+  fill: rgb(255, 255, 255);
+  font-size: 0.6em;
+  text-anchor: middle;
+}
+
+/* HIGHLIGHTED CONTENT
+-------------------------------------------------- */
 .highlighted img {
   filter: grayscale(70%);
   transition: all .6s ease;
