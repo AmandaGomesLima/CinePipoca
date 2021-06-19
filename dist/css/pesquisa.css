@@ -13,7 +13,7 @@
   margin-left: 10px;
   margin-right: 10px;
   border: 1px solid rgba(227, 227, 227, 1);
-  padding: 10px;
+  padding: 10px 0;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -25,4 +25,34 @@
 
 .pesquisa-lista a:hover {
   text-decoration: underline;
+}
+
+.pesquisa-lista img {
+  border-radius: 8px;
+}
+
+.pesquisa-lista .release {
+  font-size: 0.9em;
+}
+
+.glyphicons {
+  line-height: inherit;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: inherit;
+  min-height: 1em;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbdbdb;
+  background-size: 50%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #d7d7d7;
+  background-image: url(https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg);
+  display: block;
+  min-height: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
