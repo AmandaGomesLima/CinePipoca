@@ -58,7 +58,13 @@ body {
 /* Carousel base class */
 .carousel {
   background-color: brown;
-  /*margin-bottom: 4rem;*/
+}
+
+.carousel-titulo {
+  text-decoration: none;
+}
+.carousel-titulo:hover {
+  text-decoration: underline;
 }
 
 .flex-wrapper {

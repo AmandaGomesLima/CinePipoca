@@ -71,7 +71,9 @@ function getCarouselItem(movie) {
           '<div class="col-lg-6">' +
             '<div class="row">' +
               '<div class="col-12">' +
-                '<h2 class="text-warning pt-3 pt-lg-0">' + movie.title + '</h2>' +
+                '<a class="carousel-titulo text-warning" href="filme.html?id=' + movie.id + '">' +
+                  '<h2 class="pt-3 pt-lg-0">' + movie.title + '</h2>' +
+                '</a>' +
               '</div>' +
               '<div class="col-md-6 col-lg-12">' +
                 '<p>' + movie.overview + '</p>' +
