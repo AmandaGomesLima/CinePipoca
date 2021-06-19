@@ -30,19 +30,19 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0 me-4">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">lançamentos</a>
+                <a class="nav-link" href="#slidesMovieReleases">lançamentos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">em destaque</a>
+                <a class="nav-link" href="#destaque">em destaque</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">avaliações</a>
+                <a class="nav-link" href="#avaliacoes">avaliações</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">entrevistas & making of</a>
+                <a class="nav-link" href="#entrevistas">entrevistas & making of</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">novidades</a>
+                <a class="nav-link" href="#novidades">novidades</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -58,56 +58,12 @@
       <!---- SEÇÃO: LANÇAMENTOS ---->
       <div id="slidesMovieReleases" class="carousel slide pointer-event pt-4 pb-5 py-xl-5 px-3" data-bs-ride="carousel">
         <h1 class="text-center text-white pb-2 pb-md-3 pb-lg-4 pb-xl-5">Lançamentos</h1>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#slidesMovieReleases" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner text-light">
-          <div class="carousel-item active">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6 pt-lg-3">
-                  <div class="ratio ratio-16x9">
-                    <iframe class="carousel-video" src="https://www.youtube.com/embed/8Tk8sqXlogM?rel=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="row">
-                    <div class="col-12">
-                      <h2 class="text-warning pt-3 pt-lg-0">Mortal Kombat</h2>
-                    </div>
-                    <div class="col-md-6 col-lg-12">
-                      <p>Os planetas estão desalinhados. Para deter as forças do mal e salvar a humanidade, Lord Rayden, o protetor da Terra, escolhe as três pessoas capazes de vencer o Mortal Kombat, disputado pelos melhores lutadores do universo.</p>
-                    </div>
-                    <div class="col-md-6 col-lg-12">
-                      <div class="lh-1">
-                        <p><span class="fw-bold">Diretor(a):</span> Simon McQuoid</p>
-                        <p><span class="fw-bold">Roteiro:</span> Greg Russo, David Callaham, Rebecca Swan</p>
-                        <p><span class="fw-bold">Elenco:</span> Joe Taslim, Josh Lawson, Lewis Tan, Jessica McNamee</p>
-                        <p><span class="fw-bold">Estreia:</span> 2021</p>
-                      </div>
-                      <div class="carousel-rate fw-bold">
-                        <svg viewBox="0 0 36 36" class="circular-chart orange" preserveAspectRatio="xMinYMin meet">
-                          <circle cx="18" cy="18" r="18" fill="red" class="circle-bg"/>                          
-                          <path class="circle"
-                            stroke-dasharray="30, 100"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 1 1 0 31.831
-                              a 15.9155 15.9155 0 1 1 0 -31.831"
-                          />
-                          <text x="18" y="20.35" class="percentage">30%</text>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="carousel-indicators"></div>
+        <div class="carousel-inner text-light"></div>
       </div>
 
       <!---- SEÇÃO: EM DESTAQUE ---->
-      <div class="container-md highlighted mb-4 mb-md-5 pt-3 pt-md-4 pt-lg-5">
+      <div id="destaque" class="container-md highlighted mb-4 mb-md-5 pt-3 pt-md-4 pt-lg-5">
         <div class="row mb-4 mb-lg-5">
           <div class="col-sm-6 col-lg-9">
             <h2 class="h1 text-red">Em destaque</h2>
@@ -148,13 +104,13 @@
       </div>
 
       <!---- SEÇÃO: ÚLTIMAS AVALIAÇÕES ---->
-      <div class="container-md latest-reviews mb-4 mb-md-5 mt-2 mt-lg-0">
+      <div id="avaliacoes" class="container-md latest-reviews mb-4 mb-md-5 mt-2 mt-lg-0">
         <div class="row">
           <div class="col-lg-12">
             <h2 class="h1 text-red mb-4 mb-lg-5">Últimas avaliações</h2>
           </div>
         </div>
-        <div class="row pt-3 pt-lg-4">
+        <div class="latest-reviews-items row pt-3 pt-lg-4">
           <div class="col-lg-6 mb-4 mb-md-5 mb-lg-0">
             <div class="d-flex flex-column flex-sm-row align-items-start ps-md-3">
               <img class="rounded-circle mx-auto mb-3 mb-lg-0" src="https://around.createx.studio/img/demo/event-landing/speakers/01.jpg" alt="Ísis Brito" width="75">
@@ -197,8 +153,8 @@
         </div>
       </div>
 
-      <!---- SEÇÃO: ENTREVISTAS E MAKING OF ---->
-      <div class="container-fluid interviews-makingof bg-secondary mb-4 mb-md-5 px-0">
+      <!---- SEÇÃO: RELACIONADOS ---->
+      <div id="entrevistas" class="container-fluid interviews-makingof bg-secondary mb-4 mb-md-5 px-0">
         <div class="container-md py-4 py-lg-5">
           <div class="row">
             <div class="col-lg-12">
@@ -258,7 +214,7 @@
       </div>
 
       <!---- SEÇÃO: NOVIDADES E SOBRE ---->
-      <div class="container-md news-about-editorial mb-3 mb-lg-5">
+      <div id="novidades" class="container-md news-about-editorial mb-3 mb-lg-5">
         <div class="row">
           <div class="col-xl-8 pe-lg-5">
             <h2 class="h1 text-red mb-4 mb-md-5">Novidades</h2>
@@ -366,5 +322,6 @@
     <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="dist/js/themoviedb.js"></script>
     <script src="dist/js/script.js"></script>
+    <script src="dist/js/home.js"></script>
   </body>
 </html>

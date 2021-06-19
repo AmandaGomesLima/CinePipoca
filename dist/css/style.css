@@ -34,22 +34,22 @@ body {
 .bg-type {
   background-color: #2a89a5;
 }
-
 .bg-place {
   background-color: #a52a5d;
 }
-
 .bg-category {
   background-color: #828418;
 }
-
 .bg-award {
   background-color: #a55d2a;
 }
-
 .bg-other {
   background-color: #466ec7;
 }
+.bg-genre {
+  background-color: #212529;
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -60,16 +60,6 @@ body {
   background-color: brown;
   /*margin-bottom: 4rem;*/
 }
-
-/* Declare heights because of positioning of img element */
-/*.carousel-item {
-  height: 26rem;
-}
-
-.carousel-video {
-  width: 100%;
-  height: 350px;
-}*/
 
 .flex-wrapper {
   display: flex;

@@ -1,0 +1,135 @@
+#filme-detalhes {
+  background-color: #4b4b4b;
+  color: white;
+}
+
+#filme-detalhes .circle-bg {
+  fill: #212529;
+}
+
+#filme-detalhes .circle {
+  fill: #0c0e0f;
+}
+
+span.certification {
+  display: inline-flex;
+  white-space: nowrap;
+  align-items: center;
+  align-content: center;
+  padding: 0.06em 4px 0.15em 4px !important;
+  border: 1px solid rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.6);
+  line-height: 1;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.facts {
+  margin: 15px 0;
+  font-size: 0.9em;
+}
+.facts span+span {
+  position: relative;
+  padding-left: 10px;
+  margin-left: 4px;
+}
+
+.facts span+span:before {
+  font-size: 1.1em;
+  line-height: 1;
+  content: '\2022';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+}
+
+.elenco-container {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.elenco-container:after {
+  content: '';
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 100%);
+  will-change: opacity;
+  pointer-events: none;
+  transition: linear 0.3s;
+  opacity: 1;
+}
+
+.elenco {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.elenco li {
+  min-width: 140px;
+  width: 140px;
+  background-color: #fff;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 4px;
+  border: 1px solid rgba(227, 227, 227, 1);
+  padding-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.elenco li p {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.elenco li p:first-of-type {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.elenco::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.elenco::-webkit-scrollbar-thumb {
+  background-color: rgba(219, 219, 219, 1);
+  border-radius: 20px;
+}
+
+.elenco::-webkit-scrollbar-track {
+  background: transparent;
+}

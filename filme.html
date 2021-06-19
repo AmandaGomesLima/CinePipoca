@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Amanda Gomes Lima">
+  <title>CinePipoca</title>
+  
+  <link rel="apple-touch-icon" sizes="192x192" href="image/icon-192x192.png" type="image/png">
+  <link id="favicon" rel="shortcut icon" type="image/png" href="image/icon-192x192.png" src="image/icon-192x192.png">
+  
+  <!-- Bootstrap core CSS -->
+  <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  
+  <!-- Custom styles for this template -->
+  <link href="dist/css/style.css" rel="stylesheet">
+  <link href="dist/css/filme.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo-cine.png" alt="Logo CinePipoca" height="24" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 me-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#slidesMovieReleases">lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#destaque">em destaque</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#avaliacoes">avaliações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#entrevistas">entrevistas & making of</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#novidades">novidades</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Pesquisar filme">
+            <button class="btn btn-red" type="submit"><i class="bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <!---- SEÇÃO: DETALHES DO FILME ---->
+    <div id="filme-detalhes" class="pt-4 pb-5 py-xl-5 px-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img class="poster img-fluid" src="" alt="">
+          </div>
+          <div class="col-12 col-md-8 pt-lg-4">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="titulo text-warning">Dupla Explosiva 2</h2>
+                <div class="genres">
+                  <span class="badge bg-genre">Família</span>
+                  <span class="badge bg-genre">Animação</span>
+                  <span class="badge bg-genre">Comédia</span>
+                  <span class="badge bg-genre">Drama</span>
+                  <span class="badge bg-genre">Música</span>
+                  <span class="badge bg-genre">Fantasia</span>
+                </div>
+                <div class="facts">
+                  <span class="certification">L</span>
+                  <span class="release">25/12/2020</span>
+                  <span class="runtime">1h 40m</span>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-12">
+                <p class="overview">O casal estranho mais letal do mundo - o guarda-costas Michael Bryce e o assassino de aluguel Darius Kincaid - está de volta em outra missão com risco de vida. Ainda sem licença e sob escrutínio, Bryce é forçado a entrar em ação pela esposa ainda mais volátil de Darius, a infame vigarista internacional Sonia Kincaid. Enquanto Bryce é levado ao limite por seus dois protegidos mais perigosos, o trio se mete em uma trama global e logo descobre que eles são tudo o que se interpõe entre a Europa e um louco vingativo e poderoso.</p>
+              </div>
+              <div class="col-md-6 col-lg-12 pt-2">
+                <div class="lh-1">
+                  <p class="director">Diretor(a): <span class="fw-bold"></span></p>
+                  <p class="screenplay">Roteiro: <span class="fw-bold"></span></p>
+                </div>
+                <div class="user-vote fw-bold pt-2">
+                  <svg viewBox="0 0 36 36" class="circular-chart orange" preserveAspectRatio="xMinYMin meet">
+                    <circle cx="18" cy="18" r="18" class="circle-bg"></circle>
+                    <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845 a 15.9155 15.9155 0 1 1 0 31.831 a 15.9155 15.9155 0 1 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="pontuacao">7.5</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!---- SEÇÃO: ELENCO ---->
+    <div id="filme-elenco" class="container-md highlighted mb-4 pt-3 pt-md-4 pt-lg-5">
+      <div class="row mb-4 mb-lg-5">
+        <div class="col-12">
+          <h2 class="h1 text-red">Elenco</h2>
+        </div>
+      </div>
+      <div class="elenco-container">
+        <ol class="elenco">      
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/hPwCMEq6jLAidsXAX5BfoYgIfg2.jpg" alt="Jamie Foxx">
+            <p class="actor">Jamie Foxx</p>
+            <p class="character">Joe Gardner (voice)</p>
+          </li>
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/yPTAi1iucXf85UpiFPtyiTSM6do.jpg" alt="Tina Fey">
+            <p class="actor">Tina Fey</p>
+            <p class="character">22 (voice)</p>
+          </li>
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/zndDiPrNXtbxGLVhFhSlpCkaHIH.jpg" alt="Graham Norton">
+            <p class="actor">Graham Norton</p>
+            <p class="character">Moonwind (voice)</p>
+          </li>
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/mAQMUI507TmET25aF8tQIxQNCT8.jpg" alt="Rachel House">
+            <p class="actor">Rachel House</p>
+            <p class="character">Terry (voice)</p>
+          </li>
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/u0xdvpkvz5NQqZ4aylYu5Id68mV.jpg" alt="Alice Braga">
+            <p class="actor">Alice Braga</p>
+            <p class="character">Counselor Jerry (voice)</p>
+          </li>
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/qHKoy9kP4bsv4G9EkvU4FMUmYkS.jpg" alt="Richard Ayoade">
+            <p class="actor">Richard Ayoade</p>
+            <p class="character">Counselor Jerry (voice)</p>
+          </li>
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/orbTpG0jaYkPR167TNiEg0AKG3M.jpg" alt="Phylicia Rashād">
+            <p class="actor">Phylicia Rashād</p>
+            <p class="character">Libba Gardner (voice)</p>
+          </li>
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/ucfXd33ZGC0mcFoPZ5P4U5AwE5D.jpg" alt="Donnell Rawlings">
+            <p class="actor">Donnell Rawlings</p>
+            <p class="character">Dez (voice)</p>
+          </li>
+          <li class="card">
+            <img loading="lazy" class="profile" src="https://www.themoviedb.org/t/p/w138_and_h175_face/fAO3uL2UbtqLzjTQRvamyEfiLgA.jpg" alt="Ahmir-Khalib Thompson">
+            <p class="actor">Ahmir-Khalib Thompson</p>
+            <p class="character">Curly (voice)</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!---- SEÇÃO: RELACIONADOS ---->
+    <div id="filme-relacionados" class="container-md mb-5 pb-4 pb-md-5 pt-3 pt-md-4 pt-lg-5">
+      <div class="row mb-4 mb-lg-5">
+        <div class="col-12">
+          <h2 class="h1 text-red">Recomendações</h2>
+        </div>
+      </div>
+      <div class="filme-relacionados-lista row">
+        <div class="col-6 col-sm-2 mb-3 mb-sm-0">
+          <a href="#">
+            <img class="img-fluid" src="image/poster/em_um_bairro_nova_york.jpeg" alt="Filme Em Um Bairro Em Nova York">
+          </a>
+        </div>
+        <div class="col-6 col-sm-2 mb-3 mb-sm-0">
+          <a href="#">
+            <img class="img-fluid" src="image/poster/hallowen_kills.jpg" alt="Filme Hallowen Kills">
+          </a>
+        </div>
+        <div class="col-6 col-sm-2 mb-3 mb-sm-0">
+          <a href="#">
+            <img class="img-fluid" src="image/poster/pinoquio.jpg" alt="Filme Pinóquio">
+          </a>
+        </div>
+        <div class="col-6 col-sm-2 mb-3 mb-sm-0">
+          <a href="#">
+            <img class="img-fluid" src="image/poster/TomJerry.jpeg" alt="Filme Tom & Jerry">
+          </a>
+        </div>
+        <div class="col-6 col-sm-2">
+          <a href="#">
+            <img class="img-fluid" src="image/poster/TomJerry.jpeg" alt="Filme Tom & Jerry">
+          </a>
+        </div>
+        <div class="col-6 col-sm-2">
+          <a href="#">
+            <img class="img-fluid" src="image/poster/TomJerry.jpeg" alt="Filme Tom & Jerry">
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- RODAPÉ -->
+  <footer class="footer bg-dark py-4">
+    <div class="container-md text-white d-flex flex-column-reverse flex-sm-row align-items-center">
+      <p class="pt-3 pt-sm-0">© 2021 - Cine Pipoca - ICEI PUC Minas.</p>
+      <div class="ms-sm-auto">
+        <a href="#"><img src="image/logo-cine-vertical.png" alt="Logo CinePipoca"></a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="dist/js/themoviedb.js"></script>
+  <script src="dist/js/script.js"></script>
+  <script src="dist/js/filme.js"></script>
+</body>
+</html>
