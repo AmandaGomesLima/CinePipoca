@@ -124,6 +124,8 @@ function setGeneros(responseText) {
   });
 
   $destaqueGeneros.on('change', function() {
+    $('#destaque-filmes').empty();
+    $('#destaque button').show();
     theMovieDb.discover.getMovies({'language': 'pt-BR', 'include_adult': 'false', 'with_genres': this.value}, setDestaques, setError);
   });
 }
@@ -131,18 +133,21 @@ function setGeneros(responseText) {
 function setDestaques(responseText) {
   var $destaqueFilmes = $('#destaque-filmes');
   var json = JSON.parse(responseText);
+  var qtdAtual = $destaqueFilmes.children().length;
+  var qtdTotal = qtdAtual + 4;
 
-  $.each(json.results.slice(0,4), function(index, value) {
-    let $filme = $destaqueFilmes.find('div').eq(index);
-    $filme.find('a').attr('href', 'filme.html?id=' + value.id);
-    $filme.find('img')
-      .attr('src', 'https://www.themoviedb.org/t/p/w300_and_h450_bestv2' + value.poster_path)
-      .attr('alt', value.title);
+  $.each(json.results.slice(qtdAtual, qtdTotal), function(index, value) {
+    let filme = '<div class="col-6 col-sm-3 mb-3">' +
+                  '<a href="filme.html?id=' + value.id + '">' +
+                    '<img class="img-fluid" src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2' + value.poster_path + '" alt="' + value.title + '">' +
+                  '</a>' +
+                '</div>';
+    $destaqueFilmes.append(filme);
   });
 
-  $.each(json.results.slice(0,2), function(index, value) {
-    theMovieDb.movies.getReviews({'language': 'pt-BR', 'id': value.id}, setReviews, setError);
-  });
+  if (qtdTotal >= 20) {
+    $('#destaque button').hide();
+  }
 }
 
 function setReviews(responseText) {
@@ -198,15 +203,20 @@ function getReviewStars(review) {
 }
 
 $(function() {
-  theMovieDb.discover.getMovies({'language': 'pt-BR', 'certification_country': 'BR','ott_region': 'BR','region': 'BR','release_date.gte': '2021-06-23','release_date.lte': '2021-07-15','show_me': '0','sort_by': 'popularity.desc','vote_average.gte': '0','vote_average.lte': '10','vote_count.gte': '0','with_release_type': '3','with_runtime.gte': '0','with_runtime.lte': '400'}, setLancamentos, setError);
-  theMovieDb.genres.getMovieList({'language': 'pt-BR'}, setGeneros, setError);
-  theMovieDb.discover.getMovies({'language': 'pt-BR', 'include_adult': 'false'}, setDestaques, setError);
-
   $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 55
+        scrollTop: $($.attr(this, 'href')).offset().top - 56
     }, 500);
+  });
+
+  theMovieDb.discover.getMovies({'language': 'pt-BR', 'certification_country': 'BR','ott_region': 'BR','region': 'BR','release_date.gte': '2021-06-23','release_date.lte': '2021-07-15','show_me': '0','sort_by': 'popularity.desc','vote_average.gte': '0','vote_average.lte': '10','vote_count.gte': '0','with_release_type': '3','with_runtime.gte': '0','with_runtime.lte': '400'}, setLancamentos, setError);
+  theMovieDb.genres.getMovieList({'language': 'pt-BR'}, setGeneros, setError);
+  theMovieDb.discover.getMovies({'language': 'pt-BR', 'include_adult': 'false'}, setDestaques, setError);
+
+  $('#destaque button').on('click', function() {
+    let genero = $('#destaque-generos').val();
+    theMovieDb.discover.getMovies({'language': 'pt-BR', 'include_adult': 'false', 'with_genres': genero}, setDestaques, setError);
   });
 });
